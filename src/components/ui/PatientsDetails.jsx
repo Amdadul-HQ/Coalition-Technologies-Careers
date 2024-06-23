@@ -4,7 +4,7 @@ import { FaRegCalendar } from "react-icons/fa6";
 import { TbGenderFemale } from "react-icons/tb";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdOutlineVerifiedUser } from "react-icons/md";
-
+import { AiOutlineDownload } from "react-icons/ai";
 const PatientsDetails = ({patients}) => {
     const filterPatents = patients?.find(
         (item) => item.name === "Jessica Taylor"
@@ -57,7 +57,7 @@ const PatientsDetails = ({patients}) => {
         <div className='mt-8 bg-[#fff] py-5 px-5 rounded-2xl'>
             <p className='text-[#072635] font-extrabold text-2xl'>Lab Results</p>
             {
-                filterPatents?.lab_results.map((item,index) => <p className='text-sm font-normal py-3 text-[#072635] px-5' key={index}>{item}</p>)
+                filterPatents?.lab_results.map((item,index) => <p className='text-sm font-normal py-3 text-[#072635] px-5 flex justify-between items-center' key={index}>{item}<AiOutlineDownload className='text-xl'/></p>)
             }
         </div>
         </div>

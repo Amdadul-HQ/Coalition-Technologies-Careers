@@ -1,6 +1,7 @@
 'use client'
 import { useEffect, useState } from 'react';
 import Sidebar from './ui/Sidebar';
+import Statistics from './ui/Statistics';
 
 const PatientsDashBoard = () => {
     const [patients,setPatients] = useState([])
@@ -27,8 +28,9 @@ const PatientsDashBoard = () => {
           });
     }),[])
     return (
-        <section className='container mx-auto'>
+        <section className='container mx-auto grid grid-cols-4 gap-x-8'>
             <Sidebar patients={patients} />
+            <Statistics patients={patients} />
         </section>
     );
 };

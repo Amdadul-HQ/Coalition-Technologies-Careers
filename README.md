@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+How to Run This on Local Host 
+
+# Next.js Project
+
+This is a [Next.js](https://nextjs.org/) project. Follow the instructions below to set up and run the project on your local machine.
+
+## Prerequisites
+
+Before you begin, ensure you have the following installed on your system:
+
+- [Node.js](https://nodejs.org/) (version 14.0.0 or later)
+
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+
+
+
+I have Already Deployed This Project :
+
+[Here is Live link :](https://coalition-technologies-careers.vercel.app/)
+
+[Github Source Link :](https://github.com/Amdadul-HQ/Coalition-Technologies-Careers)
 
 ## Getting Started
 
-First, run the development server:
+In the project directory, you can run the following scripts:
+Go to file path and type cmd 
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+``` npm install
+
+
+```npm run dev or yarn dev
+
+Runs the app in development mode.
+Open http://localhost:3000 to view it in the browser.
+The page will reload if you make edits. You will also see any lint errors in the console.
+
+```npm run build or yarn build
+
+Builds the app for production to the .next folder.
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+``` npm start or yarn start
+
+Starts the application in production mode.
+Make sure to run npm run build or yarn build first.
+
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

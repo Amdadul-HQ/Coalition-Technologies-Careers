@@ -7,7 +7,7 @@ const Statistics = ({ patients }) => {
     (item) => item.name === "Jessica Taylor"
   );
 
-  console.log(filterPatents[0]?.diagnosis_history[0]?.heart_rate?.levels);
+  console.log(filterPatents[0]?.diagnostic_list);
   return (
     <div className="col-span-2">
       <div className="bg-[#fff] p-5 rounded-2xl">
@@ -54,7 +54,31 @@ const Statistics = ({ patients }) => {
         </div>
       </div>
       <div className="bg-[#fff] p-5 rounded-2xl w-full mt-8">
-        <p>Diagnostic List</p>
+        <h1 className="text-[#072635] font-extrabold text-2xl">Diagnostic List</h1>
+        <div className="mt-10">
+        <div className="overflow-x-auto">
+  <table className="table text-left w-full">
+    {/* head */}
+    <thead className="">
+      <tr className="bg-[#F6F7F8]">
+        <th className="py-3 px-4 rounded-3xl rounded-r-none">Problem/Diagnosis</th>
+        <th className="py-3 px-4 rounded-3xl rounded-r-none rounded-l-none">Description</th>
+        <th className="py-3 px-4 rounded-3xl rounded-l-none">Status</th>
+      </tr>
+    </thead>
+    <tbody>
+    
+      {
+        filterPatents[0]?.diagnostic_list.map((item,index)=><tr key={index}>
+            <td className="px-4 text-sm font-normal text-[#072635] py-5">{item.name}</td>
+            <td className="px-4 text-sm font-normal text-[#072635] py-5">{item.description}</td>
+            <td className="px-4 text-sm font-normal text-[#072635] py-5">{item.status}</td>
+          </tr>)
+      }
+    </tbody>
+  </table>
+</div>
+        </div>
       </div>
     </div>
   );

@@ -2,6 +2,7 @@
 import { useEffect, useState } from 'react';
 import Sidebar from './ui/Sidebar';
 import Statistics from './ui/Statistics';
+import PatientsDetails from './ui/PatientsDetails';
 
 const PatientsDashBoard = () => {
     const [patients,setPatients] = useState([])
@@ -31,6 +32,7 @@ const PatientsDashBoard = () => {
         <section className='container mx-auto grid grid-cols-4 gap-x-8'>
             <Sidebar patients={patients} />
             <Statistics patients={patients} />
+            <PatientsDetails patients={patients} />
         </section>
     );
 };
